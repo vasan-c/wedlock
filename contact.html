@@ -81,36 +81,38 @@
 								<form class="contact-form" action="php/send-email.php" method="post">
 									<div class="row">
 										<div class="column width-6">
-											<input type="text" name="BrideName" class="form-fname form-element large" placeholder="Bride's Name" tabindex="1" required>
+											<input type="text" name="BrideName" class="form-fname form-element large" placeholder="First Name*" tabindex="1" required>
 										</div>
 										<div class="column width-6">
-											<input type="text" name="GroomName" class="form-lname form-element large" placeholder="Bride Groom's Name" tabindex="2" required>
+											<input type="text" name="GroomName" class="form-lname form-element large" placeholder="Last Name" tabindex="2">
 										</div>
 										<div class="column width-6">
 											<input type="text" name="phone" class="form-fname form-element large" placeholder="Phone Number*" tabindex="3" required>
 										</div>
 										<div class="column width-6">
 											<div class="form-select form-element large">
-												<select name="options" class="form-aux" data-label="Options" tabindex="5">
-													<option selected="selected" value="">How'd You Find Us</option>
-													<option value="">From a friend</option>
-													<option value="">Previous client</option>
-													<option value="">Other</option>
+												<select name="Event" class="form-aux" data-label="Options" tabindex="5">
+													<option selected="selected" value="">Type of event</option>
+													<option value="Wedding">Wedding</option>
+													<option value="Birthday">Birthday</option>
+													<option value="Couple">Couple Shoots</option>
+													<option value="halfsaree">Half Saree</option>
+													<option value="Other">Other</option>
 												</select>
 											</div>
 										</div>
 										<div class="column width-6">
-											<input type="text" name="honeypot" class="form-honeypot form-element large">
+											<input type="text" name="from" class="form-honeypot form-element large">
 										</div>
 									</div>
 									<div class="row">
 										<div class="column width-12">
-											<textarea name="message" class="form-message form-element large" placeholder="Message*" tabindex="6" required></textarea>
+											<textarea name="message" class="form-message form-element large" placeholder="Message*" tabindex="6"></textarea>
 										</div>
 										<div class="column width-12">
 										</div>
 										<div class="column width-12">
-											<input type="submit" value="Submit" class="form-submit button large bkg-theme bkg-hover-theme color-charcoal color-hover-charcoal">
+									<input type="submit" value="submit" id="formsend">
 										</div>
 									</div>
 								</form>
